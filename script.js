@@ -43,7 +43,7 @@ function generatePassword() {
       var counter = 0
       var password = ''
 
-      while(counter <= passwordLength) {
+      while(counter < passwordLength) {
         if (includeUppercase && counter <= passwordLength) {
           password += getRandUpper()
           counter ++

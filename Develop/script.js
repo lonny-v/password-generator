@@ -42,6 +42,26 @@ function generatePassword() {
     else {
       var counter = 0
       var password = ''
+
+      while(counter <= passwordLength) {
+        if (includeUppercase && counter <= passwordLength) {
+          password += getRandUpper()
+          counter ++
+        }
+        if (includeLowercase && counter <= passwordLength) {
+          password += getRandLower()
+          counter ++
+        }
+        if (includeNumbers && counter <= passwordLength) {
+          password += getRandNumber()
+          counter ++
+        }
+        if (includeSymbols && counter <= passwordLength) {
+          password += getRandSymbol()
+          counter ++
+        }
+      }
+      console.log(password)
     }
 
   }

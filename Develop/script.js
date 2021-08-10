@@ -62,6 +62,7 @@ function generatePassword() {
         }
       }
       console.log(password)
+      return password
     }
 
   }

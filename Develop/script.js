@@ -35,6 +35,15 @@ function generatePassword() {
 
     var includeSymbols = confirm("Include Symbols?");
     //console.log(confirm("Include Symbols?"));
+
+    if (!includeLowercase && !includeUppercase && !includeNumbers && !includeSymbols) {
+      return "Please select at least one"
+    }
+    else {
+      var counter = 0
+      var password = ''
+    }
+
   }
 }
 

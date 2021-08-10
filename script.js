@@ -16,9 +16,9 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
-  var passwordLength = parseInt(prompt("Enter valid length(11-120)"))
-  if (passwordLength < 10 || passwordLength > 120) {
-    return "Please enter valid password length between 11 and 120"
+  var passwordLength = parseInt(prompt("Enter valid length(8-128)"))
+  if (passwordLength < 8 || passwordLength > 128) {
+    return "Please enter valid password length between 8 and 128"
   }
   else {
 
